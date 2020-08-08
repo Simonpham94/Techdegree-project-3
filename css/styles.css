@@ -1,0 +1,195 @@
+/* ================================= 
+  Element Styles
+==================================== */
+
+*{
+    font-family: Merriweather, sans-serif;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    margin: 0 auto;
+    color: #AAAFB4;
+    line-height: 1.6;
+}
+
+body :not(h1){
+    max-width: 700px;
+}
+
+h1{
+    background-color: #2D3945;
+    color: white;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+h2{
+    color:  #2D3945;
+}
+
+.intro{
+    text-align: center;
+}
+
+
+.intro p{
+    color: #AAAFB4;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+legend{
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: #2D3945;
+}
+
+/* === Contact Information === */
+.contact_info input, 
+select, 
+textarea {
+    padding-left: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: none;
+    height: auto;
+    background-color: #EFF0F1;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.contact_info input, 
+select {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+textarea {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#zip{
+    width: 50%;
+}
+
+input:focus, 
+select:focus{
+    outline: #46698B solid 2px;
+}
+
+#name::placeholder, 
+#email::placeholder, 
+#city::placeholder {
+    color: #D4D6D9;
+    font-style: italic;
+}
+
+#name::placeholder, 
+#email::placeholder{
+    text-align: right;
+    padding-right: 15px;
+}
+
+.button{
+    padding: 30px 40px 30px 40px;
+    width: 80%;
+    color: white;
+    background-color: #4EBBB5;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 auto;
+    display: block;
+}
+
+footer{ 
+    font-style: italic;
+    text-align: center;
+}
+
+/* === Horizontal lines === */
+hr{
+    width: 95%;
+    color: #2D3945;
+}
+
+.first{
+    border-top: 6px solid;
+    margin-bottom: -5px;
+}
+
+.second{
+    border-top: 3px solid;
+    margin-bottom: 30px;
+}
+
+
+/* ================================= 
+Elements Layout
+==================================== */
+
+h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.intro h2{
+    padding-top: 15px;
+}
+
+.intro p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+fieldset{
+    border: none;
+}
+
+.contact_info legend{
+    padding-bottom: 10px;
+}
+
+.contact_info label{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.newsletter label{
+    margin-left: 10px;
+}
+
+#other_topics{
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+label[for="plain_text"] {
+    margin-bottom: 20px;
+}
+
+label[for="other_topics"] {
+    margin: 30px 0 -10px 0;
+    display: block;
+}
+
+/* ================================= 
+Media Queries
+==================================== */
+
+@media (min-width: 768px){
+    
+    .input{
+        display: inline;
+        
+    }
+
+}
