@@ -3,7 +3,7 @@
 ==================================== */
 
 *{
-    font-family: Merriweather, sans-serif;
+    font-family: 'Merriweather', serif;
     box-sizing: border-box;
 }
 
@@ -12,13 +12,15 @@
 }
 
 body{
-    margin: 0 auto;
     color: #AAAFB4;
     line-height: 1.6;
+    margin: 0;
+    background-color: rgba(161, 203, 223, 0.4);
 }
 
-body :not(h1){
+.container{
     max-width: 700px;
+    margin: 0 auto;
 }
 
 h1{
@@ -48,6 +50,7 @@ legend{
     font-weight: bolder;
     color: #2D3945;
 }
+
 
 /* === Contact Information === */
 .contact_info input, 
@@ -83,17 +86,26 @@ select:focus{
     outline: #46698B solid 2px;
 }
 
-#name::placeholder, 
-#email::placeholder, 
-#city::placeholder {
-    color: #D4D6D9;
-    font-style: italic;
+
+select:focus{
+    transition: 1.5s ease-in-out;
+    background-color: rgb(45, 57, 69, 0.3);
 }
 
 #name::placeholder, 
-#email::placeholder{
+#email::placeholder,  
+#address::placeholder, 
+#phone::placeholder, 
+#city::placeholder, 
+#zip::placeholder{
+    color: #D4D6D9;
+    font-style: italic;
     text-align: right;
     padding-right: 15px;
+}
+
+select{
+    color:  #D4D6D9;
 }
 
 .button{
@@ -107,6 +119,7 @@ select:focus{
     font-weight: bold;
     margin: 0 auto;
     display: block;
+    background-color: rgb(73,106, 142,0.9)
 }
 
 footer{ 
@@ -186,10 +199,39 @@ Media Queries
 ==================================== */
 
 @media (min-width: 768px){
+
+    body {
+        color: #2D3945;
+    }
+
+    .main_footer{
+        color:  #AAAFB4;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+
     
-    .input{
-        display: inline;
+    .contact_info input, 
+    select{
+        width: 500px;
+        margin-bottom: 20px;
+    }
+
+    #zip{
+        width: 200px;
+        margin-right: 300px;
         
     }
 
+    .button{
+        width: 96%;
+    }
+    
+   
 }
